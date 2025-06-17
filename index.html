@@ -43,10 +43,9 @@
         <section class="main-hero">
             <div class="container">
                 <h1 class="title-hero">Ефективні рішення для вашого бізнесу</h1>
-                <button type="button" class="main-button">Замовити послугу</button>
+                <button type="button" class="main-button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
-
         <div class="container">
             <section class="main-project">
                 <ul class="project">
@@ -228,53 +227,101 @@
     <footer class="main-footer">
         <div class="container main-links">
             <div class="footer-logo-links">
-        <a href="../index.html" class="footer-web"><span class="footer-studio">Web</span>Studio</a>
-    <address class="main-address">
-        <a href="https://www.google.com/maps/d/u/0/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ll=50.42732700000001%2C30.538092&z=17" target="_blank" class="address-map">м. Київ, пр-т Лесі Українки, 26</a>
-    <ul class="main-contacts">
-        <li class="contacts-list"><a href="mailto:info@devstudio.com" class="address-footer">info@devstudio.com</a>
-        </li>
-        <li class="contacts-list"><a href="tel:+380961111111" class="tel-footer">+38 096 111 11 11</a>
-        </li>
-    </ul>
-</div>
-    <div class="links-footer-main">
-        <h3 class="links-title">приєднуйтесь</h3>
-       <ul class="footer-links-list">
-        <li>
-            <a href="#" class="footer-links">
-                <svg class="footer-links-img">
-                    <use href="./img/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-            </a>
-        </li>
-        <li>
-            <a href="#" class="footer-links">
-                <svg class="footer-links-img">
-                    <use href="./img/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-            </a>
-        </li>
-        <li>
-            <a href="#" class="footer-links">
-                <svg class="footer-links-img">
-                    <use href="./img/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-            </a>
-        </li>
-        <li>
-            <a href="#" class="footer-links">
-                <svg class="footer-links-img">
-                    <use href="./img/symbol-defs.svg#icon-in-company"></use>
-                </svg>
-            </a>
-        </li>
-       </ul>
-    </div>
-</address>
-</div>
+                <a href="../index.html" class="footer-web"><span class="footer-studio">Web</span>Studio</a>
+                <address class="main-address">
+                    <a href="https://www.google.com/maps/d/u/0/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ll=50.42732700000001%2C30.538092&z=17"
+                        target="_blank" class="address-map">м. Київ, пр-т Лесі Українки, 26</a>
+                    <ul class="main-contacts">
+                        <li class="contacts-list"><a href="mailto:info@devstudio.com"
+                                class="address-footer">info@devstudio.com</a>
+                        </li>
+                        <li class="contacts-list"><a href="tel:+380961111111" class="tel-footer">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+            </div>
+            <div class="links-footer-main">
+                <h3 class="links-title">приєднуйтесь</h3>
+                <ul class="footer-links-list">
+                    <li>
+                        <a href="#" class="footer-links">
+                            <svg class="footer-links-img">
+                                <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-links">
+                            <svg class="footer-links-img">
+                                <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-links">
+                            <svg class="footer-links-img">
+                                <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-links">
+                            <svg class="footer-links-img">
+                                <use href="./img/symbol-defs.svg#icon-in-company"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </address>
+        </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="model">
+            <form class="model-form">
+                <h2 class="model-title">Залиште свої дані, ми вам передзвонимо</h2>
+                <label class="model-label" for="name">Ім'я</label>
+                <div class="model-box">
+                    <input class="model-input" id="name" type="text" required>
+                    <svg class="model-icon">
+                        <use href="./img/symbol-defs.svg#icon-user"></use>
+                    </svg>
+                </div>
 
+                <label class="model-label" for="phone">Телефон</label>
+                <div class="model-box">
+                    <input class="model-input" id="phone" type="tel" required pattern="^\+?3?8?(0\d{9})$">
+                    <svg class="model-icon">
+                        <use href="./img/symbol-defs.svg#icon-phone"></use>
+                    </svg>
+                </div>
+
+                <label class="model-label" for="mail">Пошта</label>
+                <div class="model-box">
+                    <input class="model-input" id="mail" type="email" required>
+                    <svg class="model-icon">
+                        <use href="./img/symbol-defs.svg#icon-email"></use>
+                    </svg>
+                </div>
+
+                <label class="model-label" for="coment">Коментар</label>
+                <textarea class="model-comentt" name="" id="coment" placeholder="Введіть текст"></textarea>
+                <label class="model-check">
+                    <input class="model-checkbox" type="checkbox" required>
+                    <span class="model-span">Погоджуюся з розсилкою та приймаю </span>
+                    <a href="" class="model-link">Умови договору</a>
+                </label>
+                <button class="model-btn" type="submit">Відправити</button>
+                <button class="model-close" type="button" data-modal-close>
+                    <svg class="model-exit">
+                        <use href="./img/symbol-defs.svg#icon-cross"></use>
+                    </svg>
+                </button>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
 </body>
 
 </html>
