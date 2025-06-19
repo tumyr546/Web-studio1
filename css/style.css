@@ -715,7 +715,7 @@ body {
     background: var(--mainlogo-color);
     padding: 10px 52px;
     border: none;
-    margin: 30px 124px 0px 124px;
+    margin: 30px 124px 0px 150px;
 }
 
 .model-btn:hover,
