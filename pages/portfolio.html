@@ -1,9 +1,9 @@
-<!DOCTYPE >
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WebStudio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,13 +24,13 @@
          </nav>
           <ul class="address-port">   
            <li class="address-item-port"><a href="mailto:info@devstudio.com" class="address-list-port"><svg class="address-svgh-port"><use href="../img/symbol-defs.svg#icon-envelope"></use></svg>info@devstudio.com</a></li>
-           <li class="address-item-port"><a href="tel:+380961111111" class="address-list-port"><svg class="address-svgh-port"><use href="../img/symbol-defs.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a></li>
+           <li class="address-item-port"><a href="tel:+380961111111" class="address-list-port2"><svg class="address-svgh-port2"><use href="../img/symbol-defs.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a></li>
          </ul>
         </div>
          </header>
          <main>
-            <div class="container items-list">
             <section class="button-list">
+                <div class="container items-list">
                 <ul class="button-navigate">
                     <li class="button-name"><button type="button" class="port-button">Усі</button></li>
                     <li class="button-name"><button type="button" class="port-button">Веб-сайти</button></li>
@@ -41,6 +41,7 @@
                 <ul class="tovar-list">
                     <li class="card">
                         <img class="card-img" src="../img/notebook.jpg" alt="notebook">
+                        <p class="card-text-port">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                         <div class="tovar-titlee">
                         <h2 class="name-port">Технокряк</h2>
                         <p class="work-port">Веб-сайт</p>
@@ -104,13 +105,12 @@
                     </li>
                 </ul>
             </section>
-            </div>
          </main>
          <footer class="main-footer">
             <div class="container main-links">
                 <div class="footer-logo-links">
             <a href="../index.html" class="footer-web"><span class="footer-studio">Web</span>Studio</a>
-            <address class="main-address">
+        <address class="main-address">
             <a href="https://www.google.com/maps/d/u/0/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ll=50.42732700000001%2C30.538092&z=17" target="_blank" class="address-map">м. Київ, пр-т Лесі Українки, 26</a>
         <ul class="main-contacts">
             <li class="contacts-list"><a href="mailto:info@devstudio.com" class="address-footer">info@devstudio.com</a>
@@ -118,7 +118,6 @@
             <li class="contacts-list"><a href="tel:+380961111111" class="tel-footer">+38 096 111 11 11</a>
             </li>
         </ul>
-        </address>
     </div>
     <div class="links-footer-main-port">
         <h3 class="links-title-port">приєднуйтесь</h3>
@@ -152,9 +151,20 @@
             </a>
         </li>
        </ul>
+       </div>
+       <div class="newsletter">
+        <h2 class="newsletter-title">Підпишіться на розсилку</h2>
+        <form class="newsletter-form">
+            <label class="newsletter-label" for="mail">
+            <div class="newsletter-box">
+            <input class="newsletter-input" id="mail "type="email" placeholder="E-mail">
+        </label>
+        </div>
+        <button class="newsletter-btn" type="submit">Підписатися<svg class="newsletter-svg"><use href="../img/symbol-defs.svg#icon-sending"></use></svg></button>
+        </form>
     </div>
+</address>
 </div>
     </footer>
 </body>
-
 </html>
