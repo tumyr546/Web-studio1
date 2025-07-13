@@ -903,3 +903,28 @@ body {
     fill: var(--black-color);
 
 }
+
+.card-text-port {
+transition: all;
+}
+
+
+.card-text-port{
+    background: rgba(33, 150, 243, 0.90);
+    color: var(--title-color);
+    width: 370px;
+    height: 294px; 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.55; /* 155.556% */
+    letter-spacing: 0.54px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 250ms ;
+}
